@@ -1,5 +1,8 @@
 #willpower social
 
+##v0.2.1
+- fix bug on pinterest button
+
 ##v0.2.0
 - added pinterest
 
