@@ -1,4 +1,4 @@
-/*! willpower social 0.2.1 | http://www.willpower.art.br/wsocial | MIT License */
+/*! willpower social 0.2.3 | http://www.willpower.art.br/wsocial | MIT License */
 
 window.wsocial = window.wsocial || {};
 
@@ -17,7 +17,11 @@ wsocial.socialSharing = function () {
 		$shareLinks = $buttons.find('.wshare'),
 		$url = $(location).attr('href'),
 		$page_title = encodeURIComponent($('title').text()),
-		$page_img = $('[name="og:image"]').attr('content');
+		$page_img = 'http://placehold.it/100/fff/fff.png';
+
+	if ( $('[name="og:image"]').length ) {
+		var $page_img = $('[name="og:image"]').attr('content');
+	}
 
 	$buttons.attr('data-permalink',$url);
 
