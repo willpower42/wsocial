@@ -1,5 +1,9 @@
 #willpower social
 
+##v0.2.3
+- added default blank image for pinterest if no 'og:image' exist
+- change index to php
+
 ##v0.2.1
 - fix bug on pinterest button
 
